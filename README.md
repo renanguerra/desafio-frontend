@@ -18,6 +18,12 @@ FullCalendar             |  BigCalendar
 ![Tela 1](https://user-images.githubusercontent.com/53278938/104131719-fce39c00-5356-11eb-8a7d-788d3f7cbcbe.png)  |  ![Tela 2](https://user-images.githubusercontent.com/53278938/104131721-fd7c3280-5356-11eb-826f-0b90206eccf9.png)
 Nesse primeiro fixei para mostrar apenas semanalmente | Nesse deixei à escolha do usuário o tipo de visualização
 
+## Alguns Funcionalidades
+
+* Escolha de calendário.
+* Página listando todos os eventos.
+* Header responsivo.
+
 # 💻 Projeto
 
 ## Parar executar o FrontEnd
