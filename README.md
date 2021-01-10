@@ -1,28 +1,32 @@
 # Desafio-Frontend
 
 
-## Bem-vindo
+## 📝 Relatório sobre o desafio
 
-A TASDP é uma Startup com foco em desenvolvimento de sistemas web por demanda para áreas de saúde e industrias.
+Sobre os requisitos:
 
-## Como participar
-
-* Crie um novo fork e branch com seu nome-sobrenome e faça um pull request quando estiver pronto. Iremos fazer code review.
-
-## O desafio
-
-Você deverá criar uma Agenda de Eventos e apresentar os dados contidos no arquivo events.json. Obs: você pode ser basear no Google Agenda (Mobile e Desktop)
-
-Requisitos:
-
-1. A agenda deverá mostrar uma visão semanal dos eventos e ao carregar deverá ser mostrada a semana atual
+1. A agenda deverá mostrar uma visão semanal dos eventos e ao carregar deverá ser mostrada a semana atual 
 2. Deve ser possível avançar e retroceder datas
 3. Eventos que ocorrem em um mesmo período devem ser apresentados de forma clara
 4. Ao clicar em um evento deverá ser mostrado suas informações
 
-Obs: levaremos em conta o layout na versão Mobile e Desktop
+Problema que tive:
+- Usei dois calendarios diferentes no projeto, um foi o <a href='https://fullcalendar.io/'>FullCalendar</a> e o outro o <a href='https://github.com/jquense/react-big-calendar'>BigCalendar</a>, porém tive um problema onde os eventos as vezes eram renderizados e as vezes não, creio que o erro está dentro do useEffect onde executo um for e o componente dos calendarios é renderizado antes do termino do for, assim ficando sem mostrar os eventos.
 
-## Serviço Rest
+FullCalendar             |  BigCalendar
+:-------------------------:|:-------------------------:
+![Tela 1](https://user-images.githubusercontent.com/53278938/104131719-fce39c00-5356-11eb-8a7d-788d3f7cbcbe.png)  |  ![Tela 2](https://user-images.githubusercontent.com/53278938/104131721-fd7c3280-5356-11eb-826f-0b90206eccf9.png)
+Nesse primeiro fixei para mostrar apenas semanalmente | Nesse deixei à escolha do usuário o tipo de visualização
+
+# 💻 Projeto
+
+## Parar executar o FrontEnd
+
+* Clone o repositorio
+* Use o comando `npm install` para instalar as dependências 
+* Depois `npm start`
+
+## Para executar o backend
 
 Criar o backend não é o foco deste teste, portanto está sendo disponibilizado um serviço Rest que deve ser utilizado para recuperar a lista de produtos do projeto.
 
@@ -36,10 +40,14 @@ Isso irá disponibilizar uma api REST rodando no endereço http://localhost:3000
 
 Um produto especifico pode ser acessado através da url http://localhost:3000/events/{id};
 
-## Dicas
+## Recursos
 
-* Tudo bem, até pode usar jquery. Se você não quiser usar (bônus), uma sugestão: Axios para a comunicação com a API.
-* HTML o mais semântico possível.
-* Branches com readme e instruções de implantação serão bem vindos.
-* Pré-processadores CSS como Stylus ou LESS também.
-* Que tal utilizar BEM nos identificadores css? http://getbem.com/naming/ 
+* React com Typescript.
+* Layout responsivo.
+* LocalStorage simples para mudança de calendários.
+* Axios para fazer requisições
+
+
+---
+
+<p align="center">Desenvolvido com 💜 por Renan Guerra</p>
