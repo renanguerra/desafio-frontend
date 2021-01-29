@@ -10,8 +10,6 @@ Sobre os requisitos:
 3. Eventos que ocorrem em um mesmo período devem ser apresentados de forma clara
 4. Ao clicar em um evento deverá ser mostrado suas informações
 
-Problema que tive:
-- Usei dois calendarios diferentes no projeto, um foi o <a href='https://fullcalendar.io/'>FullCalendar</a> e o outro o <a href='https://github.com/jquense/react-big-calendar'>BigCalendar</a>, porém tive um problema onde os eventos as vezes eram renderizados e as vezes não, creio que o erro está dentro do useEffect onde executo um for e o componente dos calendarios é renderizado antes do termino do for, assim ficando sem mostrar os eventos.
 
 FullCalendar             |  BigCalendar
 :-------------------------:|:-------------------------:
